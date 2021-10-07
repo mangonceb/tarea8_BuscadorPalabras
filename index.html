@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Buscador</title>
+</head>
+
+<body>
+    <header>
+        <h1>Buscador</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1><strong>Buscar en el texto</strong></h1>
+
+                <!--Botón de buscar-->
+                <input type="search" id="buscador"><input type="button" id="boton" onclick="buscar()" value="Buscar"></button>
+
+                <!--Div del texto con el que trabajamos en javascript-->
+                <div id="texto">
+                    <p id="contenido">A pesar del suceso inicial, el uso de Java comenzó a declinar. La naturaleza compleja del
+                        lenguaje, su evolución lenta y la falta de integración disminuyeron su importancia hasta el
+                        punto en el que hoy día no es más usado en aplicaciones web de importancia. Sin Java, el mercado
+                        volcó su atención a Flash. Pero el hecho de que Flash comparte las mismas características
+                        básicas que su competidor en la web lo hace también susceptible de correr el mismo destino.<br><br>
+                        Mientras esta competencia silenciosa se llevaba a cabo, el software para acceder a la web
+                        continuaba evolucionando. Junto con nuevas funciones y técnicas rápidas de acceso a la red, los
+                        navegadores también mejoraron gradualmente sus intérpretes Javascript. Más potencia trajo más
+                        oportunidades y este lenguaje estaba listo para aprovecharlas.
+                        En cierto punto durante este proceso, se hizo evidente para algunos desarrolladores que ni Java
+                        o Flash podrían proveer las herramientas que ellos necesitaban para crear las aplicaciones
+                        demandadas por un número creciente de usuarios.<br><br>
+                        Estos desarrolladores, impulsados por las mejoras otorgadas por los navegadores, comenzaron a
+                        aplicar Javascript en sus aplicaciones de un modo nunca visto. La innovación y los increíbles
+                        resultados obtenidos llamaron la atención de más programadores. Pronto lo que fue llamado la
+                        “Web 2.0” nació y la percepción de Javascript en la comunidad de programadores cambió
+                        radicalmente.
+                        Javascript era claramente el lenguaje que permitía a los desarrolladores innovar y hacer cosas
+                        que nadie había podido hacer antes en la web. En los últimos años, programadores y diseñadores
+                        web alrededor del mundo surgieron con los más increíbles trucos para superar las limitaciones de
+                        esta tecnología y sus iniciales deficiencias en portabilidad. Gracias a estas nuevas
+                        implementaciones, Javascript, HTML y CSS se convirtieron pronto en la más perfecta combinación
+                        para la necesaria evolución de la web.</p>
+                </div>
+            </article>
+        </section>
+        <aside>
+            <p><strong>Menú de opciones</strong></p>
+            <h3>Elige el modo de visualización</h3>
+
+            <!--Inputs para elegir modo de visualización-->
+            <input type="radio" name="opcion" id="1" checked><label for="1">Refrescar al buscar</label>
+            <br>
+            <input type="radio" name="opcion" id="2"><label for="2">Guardar el valor</label>
+            <h3>Javascript hecho con </h3>
+            <ul>
+                <li>Expresiones regulares</li>
+                <li>Strings</li>
+                <li>Funciones</li>
+            </ul>
+        </aside>
+        <div id="extra">
+            <p><strong>Palabras buscadas</strong></p>
+            <h3>Registro en lista</h3>
+
+            <!--Registro de palabras y botón de limpiar-->
+            <ul id="registro">
+            </ul>
+            <input type="button" value="Limpiar" onclick="limpiar()">
+        </div>
+    </main>
+    <footer>
+        <p>CIPF Santa Catalina DAW curso 2021-2021</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
